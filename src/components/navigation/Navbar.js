@@ -36,18 +36,28 @@ const Navbar = ({ links }) => {
           </div>
           <div className="relative flex-1 flex justify-end items-center gap-x-4">
             <ThemeSwitch />
-            <Link className="rounded-full group group" href="#">
+            <a
+              className="rounded-full group overflow-hidden"
+              href="https://github.com/jonetmurti"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <LogoGithub
                 className="transition duration-300 text-black/[.87] dark:text-white/[.87] group-hover:text-blue-600 group-hover:dark:text-blue-500"
                 size={24}
               />
-            </Link>
-            <Link className="group" href="#">
+            </a>
+            <a
+              className="group"
+              href="https://linkedin.com/in/jonetmurti"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <LogoLinkedin
                 className="transition duration-300 text-black/[.87] dark:text-white/[.87] group-hover:text-blue-600 group-hover:dark:text-blue-500"
                 size={24}
               />
-            </Link>
+            </a>
           </div>
         </div>
       </nav>

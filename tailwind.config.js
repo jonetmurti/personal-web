@@ -13,6 +13,9 @@ module.exports = {
         title: ["var(--font-montserrat)", ...defaultTheme.fontFamily.sans],
         body: ["var(--font-hind)", ...defaultTheme.fontFamily.sans],
       },
+      transitionProperty: {
+        'background-transform': 'background-color, transform'
+      },
       colors: {
         light: "#ffffff",
         dark: "#121212",

@@ -10,12 +10,13 @@ const bgColor = {
 const textColor = {
   success: "text-green-600 dark:text-green-500",
   failed: "text-red-600 dark:text-red-500",
-  primary: "text-neutral-950 dark:text-neutral-50",
+  primary: "text-black/[0.87] dark:text-white/[0.87]",
 };
 
 const TextModal = ({ isOpen, onClose, title, description, type }) => {
   const chosenBg = bgColor[type] || "bg-blue-600 dark:bg-blue-500";
-  const chosenText = textColor[type] || "text-neutral-950 dark:text-neutral-50";
+  const chosenText =
+    textColor[type] || "text-black/[0.87] dark:text-white/[0.87]";
 
   return (
     <Transition show={isOpen} as={Fragment}>
@@ -41,7 +42,7 @@ const TextModal = ({ isOpen, onClose, title, description, type }) => {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <Dialog.Panel className="text-center shadow-xl bg-white dark:bg-neutral-700 ring-slate-200 dark:ring-neutral-600 p-6 rounded-xl w-80">
+            <Dialog.Panel className="text-center bg-light dark:bg-dark-04dp shadow-04dp p-6 rounded-xl w-80">
               <Dialog.Title
                 className={`font-title font-semibold text-lg ${chosenText}`}
               >
@@ -52,10 +53,11 @@ const TextModal = ({ isOpen, onClose, title, description, type }) => {
               </Dialog.Description>
               <div className="mt-4">
                 <button
-                  className={`text-white rounded-full py-1.5 px-7 text-sm sm:text-base ${chosenBg}`}
+                  className={`rounded-full py-1.5 px-7 text-sm sm:text-base hover:brightness-90 active:brightness-100 overflow-hidden ${chosenBg}`}
                   onClick={onClose}
                 >
-                  Close
+                  <div className="absolute inset-0 group-active:bg-white/25" />
+                  <span className="text-white">Close</span>
                 </button>
               </div>
             </Dialog.Panel>

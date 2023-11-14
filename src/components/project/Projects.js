@@ -6,11 +6,8 @@ import { motion } from "framer-motion";
 import Card from "./Card";
 import { projects } from "@/constants/project";
 import { fadeIn } from "@/constants/animation";
-import ProjectDetail from "./ProjectDetail";
 
 const Projects = () => {
-  const [isOpen, setIsOpen] = useState(true);
-
   return (
     <section id="projects" className="w-full pt-24 pb-12">
       <motion.div
@@ -27,7 +24,16 @@ const Projects = () => {
           Projects
         </motion.h1>
         <motion.div variants={fadeIn} className="text-base md:text-xl">
-          Here are several of my projects.
+          Here are several of my projects. For more projects, see my{" "}
+          <a
+            href="https://github.com/jonetmurti"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 dark:text-blue-500 underline"
+          >
+            GitHub
+          </a>
+          !
         </motion.div>
       </motion.div>
       <div className="grid grid-cols-12 justify-center gap-6">
@@ -58,7 +64,6 @@ const Projects = () => {
           );
         })}
       </div>
-      {/* <ProjectDetail isOpen={isOpen} setIsOpen={setIsOpen} /> */}
     </section>
   );
 };

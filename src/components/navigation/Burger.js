@@ -17,7 +17,7 @@ const Burger = ({ links }) => {
             {btnClasses.map((btnClass) => (
               <div
                 key={btnClass}
-                className={`transition w-full h-0.5 rounded-full bg-neutral-950 dark:bg-neutral-50 ${
+                className={`transition w-full h-0.5 rounded-full bg-black/[.87] dark:bg-white/[.87] ${
                   open ? btnClass : ""
                 }`}
               ></div>

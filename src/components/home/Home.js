@@ -30,7 +30,7 @@ const Home = () => {
           Jonet
         </motion.h1>
         <motion.div variants={fadeIn} className="text-base md:text-xl">
-          Hi there this is me!
+          {"I'm a Software Engineer"}
         </motion.div>
       </motion.div>
     </section>

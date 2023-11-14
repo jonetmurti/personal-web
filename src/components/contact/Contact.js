@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 import { fadeIn } from "@/constants/animation";
 import ContactForm from "./ContactForm";
@@ -23,11 +22,11 @@ const Contact = () => {
           Contact
         </motion.h1>
         <motion.div variants={fadeIn} className="text-base md:text-xl">
-          Send me anything, critics, advices, or just some random messages.
+          Send me anything! Critics and advice would be greatly appreciated.
         </motion.div>
       </motion.div>
       <motion.div
-        className="max-w-lg mx-auto py-14 px-8 rounded-xl overflow-hidden shadow-02dp bg-white/50 dark:bg-dark-02dp"
+        className="max-w-lg mx-auto py-14 px-8 rounded-xl overflow-hidden shadow-02dp transition-colors duration-300 bg-light dark:bg-dark-02dp"
         initial="offscreen"
         whileInView="onscreen"
         variants={fadeIn}
@@ -35,10 +34,14 @@ const Contact = () => {
       >
         <ContactForm />
         <div className="text-center mt-6">
-          Or contact me through{" "}
-          <Link href="#" className="text-blue-600 dark:text-blue-500 underline">
+          <span className="text-black/60 dark:text-white/60">{"Or contact me through "}</span>
+          <a
+            href="mailto:jonet.dev@gmail.com"
+            rel="noopener noreferrer"
+            className="text-blue-600 dark:text-blue-500 underline"
+          >
             Email
-          </Link>
+          </a>
         </div>
       </motion.div>
     </section>
