@@ -38,7 +38,7 @@ const Navbar = ({ links }) => {
             <ThemeSwitch />
             <a
               className="rounded-full group overflow-hidden"
-              href="https://github.com/jonetmurti"
+              href={process.env.NEXT_PUBLIC_GITHUB_URL}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -49,7 +49,7 @@ const Navbar = ({ links }) => {
             </a>
             <a
               className="group"
-              href="https://linkedin.com/in/jonetmurti"
+              href={process.env.NEXT_PUBLIC_LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -36,7 +36,7 @@ const Contact = () => {
         <div className="text-center mt-6">
           <span className="text-black/60 dark:text-white/60">{"Or contact me through "}</span>
           <a
-            href="mailto:jonet.dev@gmail.com"
+            href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_ADDRESS}`}
             rel="noopener noreferrer"
             className="text-blue-600 dark:text-blue-500 underline"
           >

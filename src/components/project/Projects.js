@@ -26,7 +26,7 @@ const Projects = () => {
         <motion.div variants={fadeIn} className="text-base md:text-xl">
           Here are several of my projects. For more projects, see my{" "}
           <a
-            href="https://github.com/jonetmurti"
+            href={process.env.NEXT_PUBLIC_GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 dark:text-blue-500 underline"
