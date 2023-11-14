@@ -34,7 +34,9 @@ const Contact = () => {
       >
         <ContactForm />
         <div className="text-center mt-6">
-          <span className="text-black/60 dark:text-white/60">{"Or contact me through "}</span>
+          <span className="text-black/60 dark:text-white/60">
+            {"Or contact me through "}
+          </span>
           <a
             href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_ADDRESS}`}
             rel="noopener noreferrer"

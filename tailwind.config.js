@@ -14,7 +14,7 @@ module.exports = {
         body: ["var(--font-hind)", ...defaultTheme.fontFamily.sans],
       },
       transitionProperty: {
-        'background-transform': 'background-color, transform'
+        "background-transform": "background-color, transform",
       },
       colors: {
         light: "#ffffff",

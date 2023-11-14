@@ -39,7 +39,9 @@ const Card = ({ project, className }) => {
         <div className="text-base font-title font-bold text-black/[.87] dark:text-white/[.87] mb-1">
           {project?.title}
         </div>
-        <div className="text-sm mb-4 text-black/60 dark:text-white/60">{project?.desc}</div>
+        <div className="text-sm mb-4 text-black/60 dark:text-white/60">
+          {project?.desc}
+        </div>
         <div className="flex flex-wrap gap-x-3 text-black/[.70] dark:text-white/[.70] gap-y-1 text-xs mb-1">
           {project?.techs?.map((tech) => (
             <div key={tech} className="underline">
