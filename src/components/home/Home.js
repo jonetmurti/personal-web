@@ -11,7 +11,7 @@ const Home = () => {
       className="w-full min-h-screen flex justify-center items-center"
     >
       <motion.div
-        className="relative text-center flex-1"
+        className="text-center flex-1"
         initial="offscreen"
         whileInView="onscreen"
         transition={{ staggerChildren: 0.1 }}

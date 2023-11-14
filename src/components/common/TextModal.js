@@ -53,7 +53,7 @@ const TextModal = ({ isOpen, onClose, title, description, type }) => {
               </Dialog.Description>
               <div className="mt-4">
                 <button
-                  className={`rounded-full py-1.5 px-7 text-sm sm:text-base hover:brightness-90 active:brightness-100 overflow-hidden ${chosenBg}`}
+                  className={`relative group rounded-full py-1.5 px-7 text-sm sm:text-base hover:brightness-90 active:brightness-100 overflow-hidden ${chosenBg}`}
                   onClick={onClose}
                 >
                   <div className="absolute inset-0 group-active:bg-white/25" />
